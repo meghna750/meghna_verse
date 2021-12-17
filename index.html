@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeghnaVerse</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./web_pic.jpg" width="50px" height="50px" alt="MyPic" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Works
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Extracurriculars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <h1 class="aboutHead">Hey there!<br /> Meghna This Side </h1>
+        <p class="aboutPara">An aspiring web-developer and coder!</p>
+        <div class="footer">
+            <a class="socialLinks linkedin" href="https://www.linkedin.com/in/meghna-barn123/">
+                <img class="social"
+                    src="https://yt3.ggpht.com/ytc/AKedOLQUW9FJ6oz2WOkfU_2SbFanfDvOXrYVfE4SuaDyrz0=s900-c-k-c0x00ffffff-no-rj"
+                    alt="linked image" />
+            </a>
+            <a class="social github" href="https://github.com/meghna750">
+                <img class="social" src="https://image.flaticon.com/icons/png/512/889/889192.png" alt="linked image" />
+            </a>
+            <a class="social facebook" href="https://www.facebook.com/meghna.barnwal.3">
+                <img class="social"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAAAw1BMVEUla7P///8REiQAAADa2tsiabI1cbXv9Pkqb7UFYK/E1ekQZK+kutr2+fs9d7jc5fAAXq8ZZrEAABcAABoAABMAABgKDCAREiN4nsyZtdfN2+uHp9BDe7rm7fSUlJpBQUwnKDZhjcKyxuDW4u+ct9hPgr9/oMuPrtO5zONtl8gXGCmpqa+cnKCAgIZtbnYAAB9TU15mZ28AAAt0dH0yMj9ZiL86PEcjJTOGiJJNUFnr6+vDxcg/QU/e3uHCwsRgYGmJipBmUcXxAAAMyUlEQVR4nO3dC1fiOBQA4EoNGEsLpViRNziVhxZBEGScHfr/f9WmCk5T+kia2yge754ZxeNO+Uia3iZpopx901A++w3kFT+wU4sf2KnFD+zU4gd2aiEFppdKnU6nQoJ8KZV0GcfMFaZXmsNRY+AYF8jU8FtoplI0nEFjNGx2cgXmBdOb5UZbMbGmmQghBSmH8F8g09Q0bCrtxrCZly4PWGfcavtl808THcSHq9hpjUs5vAlomN4cOaQw0kwUD2vOCLzkYGGXDYXUPXbUIUjNVBqXoG8FDqY3GxhnQH3gMG4AlhsUrHNjiKj8QMRm3HSA3hAMrDkwMcdplYDTzEET5C0BwPShwdVapNBIsQ0BaqQwTC8bVTDV3oaNsjBNFFa+gKmDYVqx/KmwoaLlwHqjacrw02BNJ4/S+gjsiDQj2WGlSa4sxa+Qk+zJVmZYGbrJiAoTZz7VMsJuHZw/S/ELzbmVCbvJkhBmpd1Ig1XacorrIHMqcmDDvBuNcJg4Q8vPDdMbMotrH7jBnYnwwjqGJt+lKJrBm/Vzwi7zyjTSApmc96F8sF+fUlzvgX/lB2vIbjZo2V1OMH3wCc0GJRtwNCHssJLzifXwPTSHXcYM0w1pyUaCzGCWscI6RVCX3xlsau9hauR7v7+Y4QQ2i6z5PiOsBFleplZFzuCuNfpF4mY0arXuJoNnx1D8zv2U45gGo4wNpl9AuRBB3Q0rUTVK1/XO7eUoTVZkq41MsJIB08z7PVA3KRltJa2JYiwzFpjuwJQXwoP09CEVpphMbSMLbADSziPcZunDSIcp2gAGBpPOm4y9TgwwkuxDwH6BuLDDmJ6zwFjyxlTYJUR+iKotNhYjTMGpJ2sarAOS93Jk5mwwBadVgBSYDtLQ89xxMMLMdkrTmAJrQDSIeMTuYoUpWkoDkgwbQjQc5oTDxQxTUnp4EmEVCBdizIF4YSmnWSKsDXGCVfk6K9hhyMkKuwGpiAwX02wwRUvqI06A3UI0HAhx9ptxwJCW0K+fAAOpiBrzlZkfRtLhLDCQVAqZvB2dPDAlYZQpFgaTcvA19dwwpMV+brGwCci9JeYebeWCJXxwcbBLkJwe8Q/m8MHiP7m4I8N0Bpi8TQc3DLX5YCC5FMvdhSgsNrOKgbH08aUHMvlH/XlhygUPDGhUJTnpIXFbnhgmrgYCc1cVLbrJj4TpFzDdbSnp1Ljtz68VPVRMkh0JKwMNP8R8mPuYwMyZQ9FX6SiYfgFwvLdDJrUdz1CDN9FFFgUbVoGOmJSkluEG2yIbxigY0BlGzrH4RFEHOoQfqMgGg0k6/AMq8a092EH8iEo/ImADsJGVi/hOgRbk8Kg5YIFVwOb3RlaRw6cHOUwfdXN0DBuBVZIEmA5yF/sR2nEH3xEMpov0LRJgpSIoDB2PTR/BAM/qJBjQpfIQx83HEWwCN9gsEXacvB3BgC7OfkiEIZwGg7y+SIQd3/mFYYA1USrsqC6GYFA3LG8hE6aEk4EQrAmZEEiFaaF2MQQbnS4sdI0OwRzQTEcmLNwNQcNKoDP3pMLC90g0bAw61VIuLNTg07AW7Nw9uSVGd87SMNicWy4s1CdMwXTAfEqRDVPorIqCNWFnMyfC4OeD0xk+BYPqT9yH5BLTqM4qCtbI3nbsV7WgA8XDzKjff/t/Mr8Fk5qXT8Gytx3m8DIqYmF65K+TGGevNHTrEYQJ9PVpWR7xigqBOTP0KGPwRUWgJkLBBFIEuq8qCBNoFMFgIu0X1SwGYcPs/ygYTCT3oZrFIEzgngUMJtINTU1BCsJEWnsomMiFm+oeCMIEPi0wmEhSR3XhB2ECd5lQsJIIjLrXDMBEOrehYELZKgrOEw7ASsXs/yYUTCDx8HPTwHhcECYwgA8FE5yHEQ3rCDwKDAUTaJhDqQcFy/5vQsGehfomtBiYwIkLBRMbnMPRMJHJ6EAwwfvPrwsTuL/42jDBTpevCxuKrdEQA/sCjUfaI7Vp7+LLNvdClzF6TncQJjBzBQj2LFQTkRINKymfDROdY3IRkyt+ehIskq0qoWkswdsWgSEJEwQm0nwp8bctIjUcjcpREUvQI39dcBQLPQeOEISJTIXQoiL+OYkSivp9wdE56nmQ4LHvgJcikTzaQnfeB2E3wGvHSB5tUbTgU8lBGOwItHwYHsfAmsCraUmG0ZPGg7AOzBMt/44kucRQ3KAE3Lz0/YEklxj1+A4FA52XIx9Gzc2hYLDTPGTD6IkeFAzocbhDyJ4OEWwUadjtSc/zqFL5Kp31nHaJUUegYWI3euGQPOXomToCDQOdhykZFlpSgYaBPiMke1ofPXc2NBETNPeQfI7Rz3SFbpnEBgVCIRUWftQqBAO9c5E72Tm0klIIBrI4ySHkwkLPg4bv3iEff5IJQ0boCGEYZLoo9RGQ8HINYRjkJFOZsGr4AbKjjqTTLDF0NOfzCAZYF2U+GHe0cMgRDDDDlwdD+Kgn+rhPE2jBUkUmLGIdp2MY3CIA8mARqw0cw+DyRWmwqGf/I7rXxYYVg8eTBaMnpsfCKlDNhzRYNWIQK2pABKoXThYscmmeKBjU7aYs2FHWEQeDKjJJsOi1lCJhQMMukmB0f2IiDOgBOTmwmMWvomEwRSYHFrOUUswwMUiRSYHFrWoXA2tCXMukwCKbxHgYyIpAMmCxK0fGwSoAw7YSYCh25kzsVAyA3m4JsIhVgNJgAOO2+cMSVr6Kh10Ktx/5wxKWw05YPVV4MZbcYUmL9SbASqLHzRuGLhJWEk1a71Z0SDpvWHSSyAATrYw5w5JXjU6ECS4NlC8sZYOA5KWXm0ILcucKQymrYaesKS20ln+usLSdRdIWy54IJCB5wrS0ZdnTYLrAgFmOsKPhMG6YyAKZ+cEY9gdIX7c9+2an+cHCy4ZlgmVfNjg3WJVhxy+WlfazrmqaEwwxbUnEtIXAXTZZTjDMtDsA294Ik0wX6nxgabs9ccHOMm1TmwuMaYM/dlgmWR6w1AszL4zUxq8AY3axwzLIwGEIs+9vw7Gxyh1vCwIOY2sPuWFnvzhl5I4pLjoZ7vQQ1+bkXFvhDHnLzIgNbhZxJfUEiMHOmoivswDFBb/LVPi2WeLcvKjjfNK+65rDubcN965MMDvX8gbL7rSCMP4TTTxQytaSMLCzThv4AbpUVpt327lssDO9JbPQ2O5SQGB+6yir0JDG2RqKwfztSaTITJ5kAwR2duvkXx8RdhI2IcoJ5i+XAvzcdJilafyNIQSMNCKiD9Enham1uHbvBYSdnVUaOCeaiRtiC06IwQhtUAXbcugjkFkdiK6jIQojtAkGPtdMPBFfHkQcRmgtBa7xJxeuFsSqJxAwckNcNkBqJKmDRpl/i8qogIGRaE6QJmZDpoYmma9b4QCDkdZ/PECZN1pEJlYGY5H2PRSAMBKl8UTDGu8NMiIqbTKGqYKHgIWR0JsjQ+OolKQCasYoW6KbFOAwP0qXo+eilratKSFhXHweXWa420qPXGB+lCrj0aRtVjEm5We+9d/4f5E/pkkKCVfN9mQ0rsDWv0DkBttHpzkujxoDxyj6MEUpGs6gMSqPm7kUUyDyhn1a/MBOLX5gpxY/sFOLH9ipxfeFnX/TUNRvGkrhm8YP7NRiD7P3fwqBr4WCZRXsf6/876x/L794vMPstV2w+9P371fvXwvXtd283l8fKNOtfb3ZrU5F9g6zFjur5tXqteuruupN7Xr9yq6r9yRmD2pdVW1bVVfnqrp++SMTdn0d+dPU3/BjX2Ibr75xl11XdbtLt7vqdpe9h+1/W1Wd/d51z8/7vfPz7WvvvP9HbonZ1v4ksd/+st9fXe9/4n9PYmrb1iP5ak3JS+twsuzPsXp3upgta8vZQlW9R6+gLpfzp97rf+6s239Vd/d/12r/97ll2zJd9na7fNxY02mv1rfsudtbW/3adOoWrq3+VZ/8fFOfzb358uVlufRWpCxIiezcuR2EWbvdy667WLg9q+7ZD0+1hbe1ntTHc7e7/auu/74+1QlsI/kE2yzd5f3c690vlgv/64O7nL38eZ0/uTt3tvQeXnqu6q12c+/e7b6s3OlD72E5p2EF+96dena/37U3u91sV+ju5tbDzHv9c746X/5ddv+6PVIVn+TC6t2FN9v6oJ37sF50PfKaMGf97tbbvcy7c2/tLTaeOu9u7rded+4+LN35zKJg1mxj9b2lTf7UF+rC26xW9rbrXtV328furv5EquRMXa7lFpm9KVz17FW///jH6hd69ZW9flqtNv2V3av3rGl/2ius5+sNebXa1NaFzfqpd7Xu0SXmX6HsK3Ku1qwC+a/mn01W/cr/uV0nn4FVJyey9KvYvs2wC4H/7MPrj5cf7cr+Oxr23eIHdmrxbWH/A2xPPF+jnUUEAAAAAElFTkSuQmCC"
+                    alt="linked image" />
+            </a>
+            <a class="social instagram" href="https://www.instagram.com/b__meghna__/">
+                <img class="social" src="https://image.freepik.com/free-vector/instagram-icon_1057-2227.jpg"
+                    alt="linked image" />
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="skills" id="skills">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <h2 class="secHead">My Skills</h2>
+        <div class="container our-services">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856 !important;">
+                                <img class="lazyload" src="https://image.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-2542.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>WEB DEV</h3>
+                            </div>
+                            <div class="back" style="background: #58582e !important;">
+                                <h5>WEB DEV</h5>
+                                <p>I have made many projects using JavaScript, Node.js, Express.js, MongoDB, etc. Website Link
+                                    Chat Application Link
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://image.freepik.com/free-vector/coding-concept-illustration_114360-939.jpg" alt="Avatar"
+                                    style="width:150px;height:150px;">
+                                <h3>PROBLEM SOLVING</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>PROBLEM SOLVING</h5>
+                                <p>I am learning DSA using C++ and also participate in coding challenges using current knowledge of C++.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://image.freepik.com/free-vector/illustration-social-media-concept_53876-18383.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>COMPUTER FUNDAMENTALS</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>COMPUTER FUNDAMENTALS</h5>
+                                <p>I am very well familiar with Computer Noetworking, Operating Systems and some digital design concepts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://engineering.fb.com/wp-content/uploads/2015/06/1522635669452_11.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>C++</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>C++</h5>
+                                <p>I have a sound knowledge of C++. I'm doing my best to cover every part of it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://image.freepik.com/free-vector/app-development-concept-with-programming-languages_23-2148688949.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>JAVA</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>JAVA</h5>
+                                <p>I started leaning Java in Nov'21. Still sharpening my knowledge in Java</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://rightphysio.com/images/our-services/Post-pre-operative.svg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>ELDERLY REHAB</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>ELDERLY REHAB</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, distinctio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="extrac" id="extrac">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <h2 class="secHead">Extracurriculars</h2>
+        <div class="container our-services">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856 !important;">
+                                <img class="lazyload" src="https://image.freepik.com/free-vector/board-games-composition_1284-18306.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>CHESS</h3>
+                            </div>
+                            <div class="back" style="background: #58582e !important;">
+                                <h5>CHESS</h5>
+                                <p> I have played CHESS for 2 Years in my school and district level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://yt3.ggpht.com/6_OhMJQt-LUT7xoLNV_4UXUk8tDpxVmdI5pHkc986EOXMQ9bmrqcHXXtXRzsm1Kz3a3ZLr6j=s900-c-k-c0x00ffffff-no-rj" alt="Avatar"
+                                    style="width:150px;height:150px;">
+                                <h3>E-cell IITG</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>E-cell IITG</h5>
+                                <p>I have worked as an associate manager at Annual entrepreneursummit of IITG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: #555856;">
+                                <img class="lazyload"
+                                    src="https://image.freepik.com/free-vector/hackathon-set-doodle-style-icons-developers-programmers_341076-296.jpg"
+                                    alt="Avatar" style="width:150px;height:150px;">
+                                <h3>HACKATHONS</h3>
+                            </div>
+                            <div class="back" style="background: #58582e;">
+                                <h5>HACKATHONS</h5>
+                                <p>I have participated in several hackathons, keeping in mind that I'm going to learn something new</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works" id="works">
+        <h2 class="secHead">My Works</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    
+    <div class="footerL">
+        <a class="socialLinks linkedin" href="https://www.linkedin.com/in/meghna-barn123/">
+            <img class="social"
+                src="https://yt3.ggpht.com/ytc/AKedOLQUW9FJ6oz2WOkfU_2SbFanfDvOXrYVfE4SuaDyrz0=s900-c-k-c0x00ffffff-no-rj"
+                alt="linked image" />
+        </a>
+        <a class="social github" href="https://github.com/meghna750">
+            <img class="social" src="https://image.flaticon.com/icons/png/512/889/889192.png" alt="linked image" />
+        </a>
+        <a class="social facebook" href="https://www.facebook.com/meghna.barnwal.3">
+            <img class="social"
+                src="data:image/png;base64,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"
+                alt="linked image" />
+        </a>
+        <a class="social instagram" href="https://www.instagram.com/b__meghna__/">
+            <img class="social" src="https://image.freepik.com/free-vector/instagram-icon_1057-2227.jpg"
+                alt="linked image" />
+        </a>
+    <div>&copy; MEGHNA BARNWAL 2021</div>
+    </div>
+</body>
+
+</html>
